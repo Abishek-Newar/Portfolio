@@ -12,7 +12,7 @@ export default function Background1(){
             </div>
             <br />
             <div>
-            <button className={`w-32  h-10 font-chill font-semibold rounded-md transition-all ease-in-out duration-500 ${mode == "dark"? "bg-white text-bgds hover:bg-forHover hover:text-white":"bg-bgds text-white hover:bg-red-300 hover"}`}>About Me</button>
+            <a href="/about" className={` px-5 py-2 font-chill font-semibold rounded-md transition-all ease-in-out duration-500 ${mode == "dark"? "bg-white text-bgds hover:bg-forHover hover:text-white":"bg-bgds text-white hover:bg-red-300 hover"}`}>About Me</a>
         </div>
         </div>
         <div className="hidden lg:block w-96 h-96 min-w-24 min-h-24 overflow-hidden  animate-wiggle ">

@@ -80,7 +80,7 @@ export default function TechStack(){
                 </div>
             </div>
             <div className={`border-2 w-[450px] h-[350px]  p-16 rounded-lg transition-all ease-in-out duration-500 ${theme == "dark"? "bg-bgds border-brdr hover:bg-forHover": "bg-white border-red-300 hover:bg-red-300"} `}>
-                <h1 className="text-center text-lg font-semibold mb-10">Others</h1>
+                <h1 className="text-center text-lg font-semibold mb-6">Others</h1>
                 <div className="flex flex-wrap justify-center gap-4">
                     {others.map((other)=>(
                         <div className={`border  rounded-md py-1 h-8 items-center   w-20 flex justify-center transition-all ease-in-out duration-500 ${theme == "dark"? "bg-forHover border-brdr hover:bg-bgds": "bg-red-300 border-red-300 hover:bg-white"} `}>
