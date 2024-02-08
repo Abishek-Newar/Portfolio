@@ -30,7 +30,7 @@ export default function AboutDivs(){
     return <div className={` font-chill flex flex-col pt-64 pb-10   items-center justify-center ${theme == "dark"? "bg-bgds":"bg-white"} gap-10`}>
             <div className={`flex flex-wrap gap-8  items-center justify-center  text-texts ` }>
                 {cards.map((card)=>(
-                    <div className={` w-[350px] h-[400px] border-2 rounded-lg p-10 ${theme == "dark"? "border-brdr": "border-red-300"}`}>
+                    <div className={` w-[350px] h-[400px] border-2 rounded-lg p-10 ${theme == "dark"? "border-brdr": "border-red-300"} transition-all ease-in-out duration-500 hover:translate-y-[-7px]`}>
                         <h1 className="text-2xl font-semibold mb-6">{card.title}</h1>
                          <p>{card.description}</p>
                     </div>
