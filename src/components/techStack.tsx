@@ -53,8 +53,8 @@ export default function TechStack(){
         <h1 className="text-center text-4xl font-semibold mb-10  ">Tech Stack</h1>
         <div className={ `flex flex-wrap gap-4 justify-center mb-32`}>
             {techs.map((tech)=>(
-                <div className={`w-24 h-24 border-2 ${theme=="dark"? "border-brdr":"border-red-300"} flex items-center justify-center rounded-lg `}>
-                    <img className="transition-all ease-in-out duration-500 hover:scale-110" src={tech.link} alt={tech.name} />
+                <div className={`group transition-all ease-in-out duration-500 w-24 h-24 border-2 hover:bg-forHover ${theme=="dark"? "border-brdr":"border-red-300"} flex items-center justify-center rounded-lg `}>
+                    <img className="transition-all ease-in-out duration-500  group-hover:scale-110" src={tech.link} alt={tech.name} />
                 </div>
             ))}
         </div>
