@@ -1,6 +1,6 @@
 
 import myself1 from "./../assets/myself1.jpg"
-import {easeOut, motion} from "framer-motion"
+import { motion} from "framer-motion"
 
 export default function Background1(){
 
