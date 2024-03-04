@@ -31,7 +31,7 @@ export default function Project(){
         <div className=" flex flex-wrap justify-center gap-8 ">
             {
                 projects.map((item,index)=>(
-                    <ProjectCom title={item.title} description={item.description} tech={item.tech} github={item.github} link={item.link} />
+                    <ProjectCom key={index} title={item.title} description={item.description} tech={item.tech} github={item.github} link={item.link} />
                 ))
             }
         </div>
