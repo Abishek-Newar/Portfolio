@@ -8,10 +8,10 @@ export default function AboutDivs(){
         description: "Hello! I am Abishek, a passionate 21-year-old Full Stack developer from the lively city of kokrajhar,Assam. I enjoy in crafting digital experiences"
     },{
         title: "Professional Background",
-        description: "I'm Front-end Developer who specializes in React. My tech Journey includes learning backend technologies such as Node.js, Express, MongoDb and front-end such as Html, CSS, React. This skill set helps me work smoothly across the entire development process"
+        description: "I'm Front-end Developer who specializes in React. My tech Journey includes learning backend technologies such as Node.js, Express, MongoDb, PostgreSQL, Prisma and front-end such as Html, CSS, React. This skill set helps me work smoothly across the entire development process"
     },{
         title: "Current Focus",
-        description: "Currently, my focus is centers on React for Front-end and Node.js for Backend. I am currently aiming to skill up to Next.js for front-end, Node.js for backend. Additionally I am eager to learn DevOps practices to enhance the deployment and system maintenence"
+        description: "Currently, my focus is centers on React for Front-end and Node.js for Backend. I am currently aiming to skill up to Next.js for front-end and backend. Additionally I am eager to learn DevOps practices to enhance the deployment and system maintenence"
     }]
 
     const education = [{

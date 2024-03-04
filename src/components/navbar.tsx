@@ -27,8 +27,8 @@ export default function Navbar():any{
             {open ? <IoClose /> : <IoMenu /> }
             </div>
         <nav className={` flex-col  lg:flex-row items-center font-chill text-end gap-10 transition-all ease-linear duration-300 ${open? "flex" : "hidden"} lg:flex`}>
-        {Links.map((link)=>(
-                    <h3 className="md:ml-8 text-sm md:my-0 my-7">
+        {Links.map((link,index)=>(
+                    <h3 key={index} className="md:ml-8 text-sm md:my-0 my-7">
                         <a href={link.link}>{link.name}</a>
                     </h3>
                 )

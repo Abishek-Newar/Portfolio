@@ -19,35 +19,27 @@ export default function TechStack(){
     },{
         name: "github",
         link: "https://skillicons.dev/icons?i=github"
+    },{
+        name: "TypeScript",
+        link: "https://skillicons.dev/icons?i=typescript"
+    },{
+        name: "PostgreSQL",
+        link: "https://skillicons.dev/icons?i=postgres"
+    },{
+        name: "Prisma",
+        link: "https://skillicons.dev/icons?i=prisma"
     }]
-
-    const frontend = [{
-        name: "HTML"
+    const skills = [{
+        name: "Frontend",
+        skill: ["HTML","CSS","React","Tailwind","NextJS"],
     },{
-        name: "CSS"
+        name: "Backend",
+        skill: ["Node","Express","Hono","PostgreSQL","Prisma","MongoDB"]
     },{
-        name: "React"
-    },{
-        name:"Tailwind"
-    }];
-    const backend = [{
-        name: "MongoDB"
-    },{
-        name: "Node"
-    },{
-        name:"Express"
-    }];
-    const others = [{
-        name: "TypeScript"
-    },{
-        name: "JavaScript"
-    },{
-        name: "Git"
-    },{
-        name: "C++"
-    },{
-        name: "Java"
+        name: "Others",
+       skill: ["TypeScript","JavaScript","Git","C++","Java"]
     }]
+    
     const theme = localStorage.getItem("modes");
     return <div className={`${theme == "dark"? "bg-bgds text-white":"bg-white text-bgds"} mx-auto select-none `}>
         <h1 className="text-center text-4xl font-semibold mb-10  ">Tech Stack</h1>
@@ -59,36 +51,21 @@ export default function TechStack(){
             ))}
         </div>
         <div className="flex flex-wrap gap-8 p-10 font-chill  justify-center ">
-            <div className={`border-2 w-[450px] h-[350px]  p-16 rounded-lg transition-all ease-in-out duration-500 ${theme == "dark"? "bg-bgds border-brdr hover:bg-forHover": "bg-white border border-red-300 hover:bg-red-300"} `}>
-                <h1 className="text-center text-lg font-semibold mb-10">FrontEnd</h1>
-                <div className="flex flex-wrap justify-center gap-4">
-                    {frontend.map((front)=>(
-                        <div className={`border rounded-md h-8 items-center  w-20 flex py-1 justify-center transition-all ease-in-out duration-500  ${theme == "dark"? "bg-forHover border-brdr hover:bg-bgds": "bg-red-300 border-red-300 hover:bg-white"} `}>
-                            <h3 className="text-xs font-light">{front.name}</h3>
+            
+            {
+                skills.map((item,index)=>(
+                    <div key={index} className={`border-2 w-[450px] h-[350px] h-auto  p-16 rounded-lg transition-all ease-in-out duration-500 ${theme == "dark"? "bg-bgds border-brdr hover:bg-forHover": "bg-white border border-red-300 hover:bg-red-300"} `}>
+                    <h1 className="text-center text-lg font-semibold mb-10">{item.name}</h1>
+                    <div className="flex flex-wrap justify-center gap-4">
+                    {item.skill.map((front,index)=>(
+                        <div key={index} className={`border rounded-md h-8 items-center  w-20 flex py-1 justify-center transition-all ease-in-out duration-500  ${theme == "dark"? "bg-forHover border-brdr hover:bg-bgds": "bg-red-300 border-red-300 hover:bg-white"} `}>
+                            <h3 className="text-xs font-light">{front}</h3>
                         </div>
                     ))}
                 </div>
             </div>
-            <div className={`border-2 w-[450px] h-[350px]  p-16 rounded-lg transition-all ease-in-out duration-500 ${theme == "dark"? "bg-bgds border-brdr hover:bg-forHover": "bg-white border-red-300 hover:bg-red-300"} `}>
-                <h1 className="text-center text-lg font-semibold mb-10">BackEnd</h1>
-                <div className="flex flex-wrap justify-center gap-4">
-                    {backend.map((back)=>(
-                        <div className={`border rounded-md py-1 h-8 items-center  w-20 flex justify-center transition-all ease-in-out duration-500 ${theme == "dark"? "bg-forHover border-brdr hover:bg-bgds": "bg-red-300 border-red-300 hover:bg-white"} `}>
-                            <h3 className="text-xs font-light">{back.name}</h3>
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className={`border-2 w-[450px] h-[350px]  p-16 rounded-lg transition-all ease-in-out duration-500 ${theme == "dark"? "bg-bgds border-brdr hover:bg-forHover": "bg-white border-red-300 hover:bg-red-300"} `}>
-                <h1 className="text-center text-lg font-semibold mb-6">Others</h1>
-                <div className="flex flex-wrap justify-center gap-4">
-                    {others.map((other)=>(
-                        <div className={`border  rounded-md py-1 h-8 items-center   w-20 flex justify-center transition-all ease-in-out duration-500 ${theme == "dark"? "bg-forHover border-brdr hover:bg-bgds": "bg-red-300 border-red-300 hover:bg-white"} `}>
-                            <h3 className="text-xs font-light">{other.name}</h3>
-                        </div>
-                    ))}
-                </div>
-            </div>
+                ))
+            }
         </div>
     </div>
 }
