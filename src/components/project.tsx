@@ -9,7 +9,7 @@ export default function Project(){
         description: "Welcome to Blog-App, A go to place for yo to post yours journals and blogs",
         tech: ["React","Hono","Tailwind","JWT","PostgreSqL"],
         github: "https://github.com/Abishek-Newar/Blog-App",
-        link: ""
+        link: "https://myjournal-pink.vercel.app"
     },{
         title: "Payments-App",
         description: "Welcome To Payments-App, Your Go-To Platform for transactions",
