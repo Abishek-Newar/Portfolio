@@ -35,6 +35,8 @@ export default function Project(){
                 ))
             }
         </div>
-        
+        <div className="flex justify-center mt-10">
+            <a className="bg-white text-black px-3 py-2 rounded-lg hover:bg-white/70 transition-all ease-linear duration-500 uppercase font-bold cursor-pointer" href="https://github.com/Abishek-Newar" target="_blank">More Projects</a>
+        </div>
     </div>
 }
