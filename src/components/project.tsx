@@ -4,6 +4,7 @@ import ProjectCom from "./projectCom";
 
 
 export default function Project(){
+    
     const projects = [{
         title: "Blog-App",
         description: "Welcome to Blog-App, A go to place for yo to post yours journals and blogs",
@@ -36,7 +37,7 @@ export default function Project(){
             }
         </div>
         <div className="flex justify-center mt-10">
-            <a className="bg-white text-black px-3 py-2 rounded-lg hover:bg-white/70 transition-all ease-linear duration-500 uppercase font-bold cursor-pointer" href="https://github.com/Abishek-Newar" target="_blank">More Projects</a>
+            <a className={` px-5 py-3 font-chill font-semibold rounded-md uppercase transition-all ease-in-out duration-500 ${theme == "dark"? "bg-white text-bgds hover:bg-forHover hover:text-white":"bg-bgds text-white hover:bg-red-300 hover"}`} href="https://github.com/Abishek-Newar" target="_blank">More Projects</a>
         </div>
     </div>
 }
