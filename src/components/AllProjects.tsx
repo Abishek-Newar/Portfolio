@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom"
-import ProjectCom from "./projectCom"
+import ProjectCom from "./projectCom";
 
 const AllProjects = () => {
     const mode = localStorage.getItem("modes");
