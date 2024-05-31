@@ -1,4 +1,4 @@
-'use client'
+
 import Lenis from "lenis";
 import { useEffect, useRef } from "react";
 import Picture1 from "../assets/Picture1.png"
@@ -8,9 +8,9 @@ import { useScroll, useTransform, motion } from "framer-motion";
 
 export default function ScrollAniamtion() {
     const theme = localStorage.getItem("modes")
-  const container = useRef()
+  const container = useRef<any>()
   const {scrollYProgress} = useScroll({
-    target: container,
+    target: container.current,
     offset: ["start end","end start"]
   })
   useEffect(()=>{
