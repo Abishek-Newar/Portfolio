@@ -5,7 +5,8 @@ import { FaSun } from "react-icons/fa6";
 export default function Navbar():any{
     let Links = [
         {name:"HOME",link:"/"},
-        {name:"ABOUT",link:"/about"}
+        {name:"ABOUT",link:"/about"},
+        {name: "PROJECTS",link:"/projects"}
     ];
 
     function modes(){

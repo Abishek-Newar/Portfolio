@@ -28,6 +28,9 @@ export default function TechStack(){
     },{
         name: "Prisma",
         link: "https://skillicons.dev/icons?i=prisma"
+    },{
+        name: "Docker",
+        link: "https://skillicons.dev/icons?i=docker"
     }]
     const skills = [{
         name: "Frontend",
@@ -37,7 +40,7 @@ export default function TechStack(){
         skill: ["Node","Express","Hono","PostgreSQL","Prisma","MongoDB"]
     },{
         name: "Others",
-       skill: ["TypeScript","JavaScript","Git","C++","Java"]
+       skill: ["TypeScript","JavaScript","Docker","Git","C++","Java"]
     }]
     
     const theme = localStorage.getItem("modes");
@@ -54,7 +57,7 @@ export default function TechStack(){
             
             {
                 skills.map((item,index)=>(
-                    <div key={index} className={`border-2 w-[450px] h-[350px] h-auto  p-16 rounded-lg transition-all ease-in-out duration-500 ${theme == "dark"? "bg-bgds border-brdr hover:bg-forHover": "bg-white border border-red-300 hover:bg-red-300"} `}>
+                    <div key={index} className={`border-2 w-[450px] h-[350px]   p-16 rounded-lg transition-all ease-in-out duration-500 ${theme == "dark"? "bg-bgds border-brdr hover:bg-forHover": "bg-white border border-red-300 hover:bg-red-300"} `}>
                     <h1 className="text-center text-lg font-semibold mb-10">{item.name}</h1>
                     <div className="flex flex-wrap justify-center gap-4">
                     {item.skill.map((front,index)=>(

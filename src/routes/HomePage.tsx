@@ -4,6 +4,7 @@ import Navbar from "./../components/navbar"
 import Project from "./../components/project"
 import TechStack from "./../components/techStack"
 import Footers from "./../components/Footer"
+import ScrollAniamtion from "../components/ScrollAnimation"
 
 
 function Homepage() {
@@ -13,6 +14,7 @@ function Homepage() {
     <div >
       <Navbar />
       <Background1 />
+      <ScrollAniamtion />
       <TechStack />
       <Project />
       <Footers />

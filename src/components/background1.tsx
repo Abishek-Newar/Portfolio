@@ -6,7 +6,7 @@ export default function Background1(){
 
 
     const mode = localStorage.getItem("modes");
-    return <div className={`h-screen ${mode == "dark"? "bg-bgds text-white":"bg-white text-bgds"}  flex items-center justify-around select-none`}>
+    return <div className={`min-h-screen ${mode == "dark"? "bg-bgds text-white":"bg-white text-bgds"}  flex items-center justify-around select-none`}>
         <div  
         className=" w-[20rem] sm:w-[32rem] md:w-[43rem] flex flex-col items-center justify-center anime">
             <h2 className=" text-center  text-4xl font-semibold">Hi, I'm</h2>

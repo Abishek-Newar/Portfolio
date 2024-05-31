@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import ProjectCom from "./projectCom";
 
 
@@ -37,7 +38,7 @@ export default function Project(){
             }
         </div>
         <div className="flex justify-center mt-10">
-            <a className={` px-5 py-3 font-chill font-semibold rounded-md uppercase transition-all ease-in-out duration-500 ${theme == "dark"? "bg-white text-bgds hover:bg-forHover hover:text-white":"bg-bgds text-white hover:bg-red-300 hover"}`} href="https://github.com/Abishek-Newar" target="_blank">More Projects</a>
+            <Link to="/projects"><button className={` px-5 py-3 font-chill font-semibold rounded-md uppercase transition-all ease-in-out duration-500 ${theme == "dark"? "bg-white text-bgds hover:bg-forHover hover:text-white":"bg-bgds text-white hover:bg-red-300 hover"}`} >More Projects</button></Link>
         </div>
     </div>
 }
