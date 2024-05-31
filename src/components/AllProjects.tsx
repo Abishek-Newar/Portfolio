@@ -34,7 +34,7 @@ const AllProjects = () => {
         link: "https://restaurant-website-red.vercel.app/"
     }]
   return (
-    <div className={`${mode == "dark"? "bg-bgds text-white": "bg-white text-bgds"} font-chill py-44`}>
+    <div className={`${mode == "dark"? "bg-bgds text-white": "bg-white text-bgds"} font-chill py-44 px-[5%] `}>
         <h1 className="text-center text-4xl font-semibold font-chill mb-12 ">Projects</h1>
         <div className=" flex flex-wrap justify-center gap-8 ">
             {
