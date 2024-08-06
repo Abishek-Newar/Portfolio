@@ -16,7 +16,7 @@ export default function AboutDivs(){
 
     const education = [{
         degree: "B.E",
-        year: "2020 - present",
+        year: "2020 - 2024",
         college: "Chadigarh University"
     },{
         degree: "Senior Secondary",

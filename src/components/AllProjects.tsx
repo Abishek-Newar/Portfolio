@@ -3,6 +3,18 @@ import ProjectCom from "./projectCom";
 const AllProjects = () => {
     const mode = localStorage.getItem("modes");
     const projects = [{
+        title: "StackQuest",
+        description: "Welcome To StackQuest, A Platform where you can post quesreies and solve queries of other peoples",
+        tech: ["Nextjs","Appwrite","Tailwind"],
+        github: "https://github.com/Abishek-Newar/stackquest",
+        link: ""
+    },{
+        title: "SyncWrite",
+        description: "Welcome To SyncWrite, A docs editor where you can collab live with your others to update documents",
+        tech: ["Nextjs","Clerk","TypeScript","Liveblocks"],
+        github: "https://github.com/Abishek-Newar/syncwrite",
+        link: "https://restaurant-website-red.vercel.app/"
+    },{
         title: "Blog-App",
         description: "Welcome to Blog-App, A go to place for yo to post yours journals and blogs",
         tech: ["React","Hono","Tailwind","JWT","PostgreSqL"],
@@ -32,7 +44,7 @@ const AllProjects = () => {
         tech: ["React"," Tailwind"," Node", "Chartjs","MongoDB"],
         github: "https://github.com/Abishek-Newar/Restaurant-Website",
         link: "https://restaurant-website-red.vercel.app/"
-    }]
+    },]
   return (
     <div className={`${mode == "dark"? "bg-bgds text-white": "bg-white text-bgds"} font-chill py-44 px-[5%] `}>
         <h1 className="text-center text-4xl font-semibold font-chill mb-12 ">Projects</h1>
