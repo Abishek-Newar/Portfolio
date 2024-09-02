@@ -40,7 +40,7 @@ export default function TechStack(){
         skill: ["Node","Express","Hono","PostgreSQL","Prisma","MongoDB"]
     },{
         name: "Others",
-       skill: ["TypeScript","JavaScript","Docker","Git","AWS","Kubernetes","Kafka"]
+       skill: ["TypeScript","JavaScript","Python","Docker","Git","AWS","Kubernetes","Kafka"]
     }]
     
     const theme = localStorage.getItem("modes");
