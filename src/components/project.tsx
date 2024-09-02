@@ -7,17 +7,17 @@ import ProjectCom from "./projectCom";
 export default function Project(){
     
     const projects = [{
+        title: "SyncWrite",
+        description: "Welcome To SyncWrite, A docs editor where you can collab live with your others to update documents",
+        tech: ["Nextjs","Clerk","TypeScript","Liveblocks"],
+        github: "https://github.com/Abishek-Newar/syncwrite",
+        link: "https://syncwrite-liard.vercel.app/"
+    },{
         title: "Blog-App",
         description: "Welcome to Blog-App, A go to place for yo to post yours journals and blogs",
         tech: ["React","Hono","Tailwind","JWT","PostgreSqL"],
         github: "https://github.com/Abishek-Newar/Blog-App",
         link: "https://myjournal-pink.vercel.app"
-    },{
-        title: "Payments-App",
-        description: "Welcome To Payments-App, Your Go-To Platform for transactions",
-        tech: ["React","Node","Express","JWT"],
-        github: "https://github.com/Abishek-Newar/LearningMERN/tree/main/paytm_clone",
-        link: ""
     },{
         title: "Restaurant Website",
         description: "Welcome To Retaurant-website, Your Go-To Platform for food order,dining booking and party boookings",
