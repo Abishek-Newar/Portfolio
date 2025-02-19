@@ -3,6 +3,12 @@ import ProjectCom from "./projectCom";
 const AllProjects = () => {
     const mode = localStorage.getItem("modes");
     const projects = [{
+        title: "StayHub",
+        description: "Welcome To StayHub, A hotel management system for booking, managing bookings",
+        tech: ["React","Tailwind","Node","Express","MongoDB","AWS"],
+        github: "https://github.com/Abishek-Newar/hotelmanagementsystem",
+        link: ""
+    },{
         title: "SyncWrite",
         description: "Welcome To SyncWrite, A docs editor where you can collab live with your others to update documents",
         tech: ["Nextjs","Clerk","TypeScript","Liveblocks"],
