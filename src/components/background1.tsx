@@ -12,7 +12,7 @@ export default function Background1(){
             <h2 className=" text-center  text-4xl font-semibold">Hi, I'm</h2>
             <h1 className="md:text-[10rem] text-start font-bold sm:text-8xl text-6xl">ABISHEK</h1>
             <div className=" w-[20rem] sm:w-[32rem] md:w-[43rem] flex items-center justify-center pl-10 md:p-0">
-            <h3 className=" text-xs sm:text-xl">A passionate Full Stack Developer Based in India specializing in building Web Application, Backend Apis</h3>
+            <h3 className=" text-xs sm:text-xl">A passionate AI Engineer based in India specializing in building intelligent applications using generative AI technologies, LLMs, and custom AI solutions.</h3>
             </div>
             <br />
             <div>

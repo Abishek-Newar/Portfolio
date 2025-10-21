@@ -40,7 +40,7 @@ export default function TechStack(){
         skill: ["Node","Express","Hono","PostgreSQL","Prisma","MongoDB"]
     },{
         name: "Others",
-       skill: ["TypeScript","JavaScript","Python","Docker","Git","AWS","Kubernetes","Kafka"]
+       skill: ["TypeScript","JavaScript","Python","PHP","Docker","Git", "Github","AWS","Wordpress", "Wordpress Plugin Development"]
     }]
     
     const theme = localStorage.getItem("modes");
@@ -61,7 +61,7 @@ export default function TechStack(){
                     <h1 className="text-center text-lg font-semibold mb-10">{item.name}</h1>
                     <div className="flex flex-wrap justify-center gap-4">
                     {item.skill.map((front,index)=>(
-                        <div key={index} className={`border rounded-md h-8 items-center  w-20 flex py-1 justify-center transition-all ease-in-out duration-500  ${theme == "dark"? "bg-forHover border-brdr hover:bg-bgds": "bg-red-300 border-red-300 hover:bg-white"} `}>
+                        <div key={index} className={`border rounded-md h-8 items-center ${item.name =="Others" && front =="Wordpress Plugin Development"? 'w-auto p-2': 'w-20' } flex py-1 justify-center transition-all ease-in-out duration-500  ${theme == "dark"? "bg-forHover border-brdr hover:bg-bgds": "bg-red-300 border-red-300 hover:bg-white"} `}>
                             <h3 className="text-xs font-light">{front}</h3>
                         </div>
                     ))}
