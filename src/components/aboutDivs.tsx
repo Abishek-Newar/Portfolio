@@ -5,13 +5,13 @@ export default function AboutDivs(){
     const theme = localStorage.getItem("modes")
     const cards = [{
         title: "About Me",
-        description: "Hello! I am Abishek, a passionate 21-year-old Full Stack developer from the lively city of kokrajhar,Assam. I enjoy in crafting digital experiences"
+        description: "Hello! I am Abishek, a passionate 22-year-old Full Stack developer from the lively city of kokrajhar,Assam. I enjoy in crafting digital experiences"
     },{
         title: "Professional Background",
-        description: "I'm Front-end Developer who specializes in React. My tech Journey includes learning backend technologies such as Node.js, Express, MongoDb, PostgreSQL, Prisma and front-end such as Html, CSS, React. This skill set helps me work smoothly across the entire development process"
+        description: "I’m a Full Stack Developer specializing in Next.js. My expertise spans both front-end and back-end development, working with technologies like React, Node.js, Express, MongoDB, PostgreSQL, and Prisma. I focus on building scalable, efficient, and user-friendly web applications."
     },{
         title: "Current Focus",
-        description: "Currently, my focus is centers on React for Front-end and Node.js for Backend. I am currently aiming to skill up to Next.js for front-end and backend. Additionally I am eager to learn DevOps practices to enhance the deployment and system maintenence"
+        description: "My current focus is on full-stack development using React, Node.js, and Next.js. I am continuously working to deepen my expertise in building scalable and efficient web applications. Additionally, I am eager to learn DevOps practices to enhance deployment, automation, and system maintenance."
     }]
 
     const education = [{
@@ -35,7 +35,7 @@ export default function AboutDivs(){
     },{
         role: "Web Developer",
         company: "Cool Plugins",
-        year: "Mar 2025 - Present"
+        year: "Mar 2025 - Oct 2025"
     }]
     return <div className={` font-chill flex flex-col pt-64 pb-10   items-center justify-center ${theme == "dark"? "bg-bgds":"bg-white"} gap-10`}>
             <div className={`flex flex-wrap gap-8  items-center justify-center  text-texts ` }>

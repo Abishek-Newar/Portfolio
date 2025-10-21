@@ -14,8 +14,8 @@ const ProjectCom = ({title,description,tech,github,link}:Dataprops) => {
                 <div className="flex justify-between items-center">
                     <FaRegFolder className="w-8 h-8" />
                     <div className="flex gap-3">
-                        <a href={link}><FaExternalLinkAlt /></a>
-                        <a href={github}><FiGithub /></a>
+                        <a target="_blank" href={link}><FaExternalLinkAlt /></a>
+                        <a target="_blank" href={github}><FiGithub /></a>
                     </div>
                 </div>
                 <div className="">

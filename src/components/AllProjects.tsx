@@ -44,12 +44,6 @@ const AllProjects = () => {
         tech: ["React"," Tailwind"," Node", "Chartjs","MongoDB"],
         github: "https://github.com/Abishek-Newar/ExpenseTracker",
         link: "https://github.com/Abishek-Newar/ExpenseTracker"
-    },{
-        title: "StackQuest",
-        description: "Welcome To StackQuest, A Platform where you can post quesreies and solve queries of other peoples",
-        tech: ["Nextjs","Appwrite","Tailwind"],
-        github: "https://github.com/Abishek-Newar/stackquest",
-        link: "https://github.com/Abishek-Newar/stackquest"
     }]
   return (
     <div className={`${mode == "dark"? "bg-bgds text-white": "bg-white text-bgds"} font-chill py-44 px-[5%] `}>
