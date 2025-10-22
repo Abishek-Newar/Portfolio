@@ -36,8 +36,8 @@ const AllProjects = () => {
         title: "Ecommerce",
         description: "Welcome To Grace Attire, Your Go-To Platform for Shopping, clothings",
         tech: ["React","Tailwind","Node","Firebase","MongoDB"],
-        github: "https://github.com/Abishek-Newar/Restaurant-Website",
-        link: "https://restaurant-website-red.vercel.app/"
+        github: "https://github.com/Abishek-Newar/Ecommerce_mern",
+        link: "https://ecommerce-mern-3xpe.vercel.app/"
     },{
         title: "Expense Tracker",
         description: "Welcome To Expenses, Your Go-To Platform for managing your expenses",
