@@ -6,51 +6,74 @@ const AllProjects = () => {
         title: "StayHub",
         description: "Welcome To StayHub, A hotel management system for booking, managing bookings",
         tech: ["React","Tailwind","Node","Express","MongoDB","AWS"],
-        github: "https://github.com/Abishek-Newar/hotelmanagementsystem",
-        link: ""
+        github: "https://github.com/Abishek-Newar/HotelManagementSystem",
+        category: "Full Stack",
+        link: "https://github.com/Abishek-Newar/HotelManagementSystem"
     },{
         title: "SyncWrite",
         description: "Welcome To SyncWrite, A docs editor where you can collab live with your others to update documents",
         tech: ["Nextjs","Clerk","TypeScript","Liveblocks"],
         github: "https://github.com/Abishek-Newar/syncwrite",
+        category: "Full Stack",
         link: "https://syncwrite-liard.vercel.app/"
     },{
         title: "Blog-App",
         description: "Welcome to Blog-App, A go to place for yo to post yours journals and blogs",
         tech: ["React","Hono","Tailwind","JWT","PostgreSqL"],
         github: "https://github.com/Abishek-Newar/Blog-App",
+        category: "Full Stack",
         link: "https://myjournal-pink.vercel.app"
     },{
         title: "Payments-App",
         description: "Welcome To Payments-App, Your Go-To Platform for transactions",
         tech: ["React","Node","Express","JWT"],
         github: "https://github.com/Abishek-Newar/LearningMERN/tree/main/paytm_clone",
+        category: "Full Stack",
         link: "https://github.com/Abishek-Newar/LearningMERN/tree/main/paytm_clone"
+    },{
+        title: "DevRev",
+        description: "STATUS: IN PROGRESS",
+        tech: ["HTML","CSS","JavaScript"],
+        github: "https://github.com/Abishek-Newar/devrev-replica",
+        category: "Frontend",
+        link: "https://devrev-replica.vercel.app/"
     },{
         title: "Restaurant Website",
         description: "Welcome To Retaurant-website, Your Go-To Platform for food order,dining booking and party boookings",
         tech: ["HTML","CSS","JavaScript"],
-        github: "https://github.com/Abishek-Newar/Ecommerce",
-        link: "https://github.com/Abishek-Newar/Ecommerce"
+        github: "https://github.com/Abishek-Newar/Restaurant-website-deployment",
+        category: "Frontend",
+        link: "https://restaurant-website-red.vercel.app/"
     },{
         title: "Ecommerce",
         description: "Welcome To Grace Attire, Your Go-To Platform for Shopping, clothings",
         tech: ["React","Tailwind","Node","Firebase","MongoDB"],
         github: "https://github.com/Abishek-Newar/Ecommerce_mern",
+        category: "Full Stack",
         link: "https://ecommerce-mern-3xpe.vercel.app/"
     },{
         title: "Expense Tracker",
         description: "Welcome To Expenses, Your Go-To Platform for managing your expenses",
         tech: ["React"," Tailwind"," Node", "Chartjs","MongoDB"],
         github: "https://github.com/Abishek-Newar/ExpenseTracker",
+        category: "Full Stack",
         link: "https://github.com/Abishek-Newar/ExpenseTracker"
     }]
   return (
-    <div className={`${mode != "light"? "bg-bgds text-white": "bg-white text-bgds"} font-chill py-44 px-[5%] `}>
-        <h1 className="text-center text-4xl font-semibold font-chill mb-12 ">Projects</h1>
+    <div className={`${mode != "light"? "bg-bgds text-white": "bg-white text-bgds"} flex flex-col items-center gap-8 font-chill py-44 px-[5%] `}>
+        <h1 className="text-center text-5xl font-semibold font-chill ">Projects</h1>
+        <h2 className="text-center text-3xl font-semibold font-chill">Full Stack</h2>
         <div className=" flex flex-wrap justify-center gap-8 ">
             {
-                projects.map((item,index)=>(
+                projects.filter((item)=>item.category === "Full Stack").map((item,index)=>(
+                    <ProjectCom key={index} title={item.title} description={item.description} tech={item.tech} github={item.github} link={item.link} />
+                ))
+            }
+        </div>
+        <h2 className="text-center text-3xl font-semibold font-chill">Frontend</h2>
+        <div className=" flex flex-wrap justify-center gap-8 ">
+            {
+                projects.filter((item)=>item.category === "Frontend").map((item,index)=>(
                     <ProjectCom key={index} title={item.title} description={item.description} tech={item.tech} github={item.github} link={item.link} />
                 ))
             }
