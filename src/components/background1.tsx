@@ -33,6 +33,7 @@ export default function Background1(){
             );
         }
         return () => {
+            //@ts-ignore
             if (vantaEffect) vantaEffect.destroy();
         }
     }, [vantaEffect, mode]);
