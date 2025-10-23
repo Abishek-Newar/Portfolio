@@ -23,7 +23,7 @@ export default function ScrollAniamtion() {
     requestAnimationFrame(raf)
   },[])
   return (
-    <div className={`${theme == "dark"? "bg-bgds text-white": "bg-white text-bgds"} font-chill overflow-hidden`}>
+    <div className={`${theme != "light"? "bg-bgds text-white": "bg-white text-bgds"} font-chill overflow-hidden`}>
     <div className="h-[30vh]"></div>
     <div ref={container} >
     <Slider text1="Front End Developer" text2="Back  End Developer" text3="Full Stack Developer" left="-55%" progress={scrollYProgress} direction="left"/>

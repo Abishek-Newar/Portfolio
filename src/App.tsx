@@ -2,10 +2,15 @@ import {BrowserRouter, Routes, Route}  from "react-router-dom"
 import Homepage from "./routes/HomePage"
 import About from "./routes/About"
 import Projects from "./routes/Projects"
+import { useEffect } from "react"
 
 
 function App() {
-  
+  useEffect(()=>{
+    if(!localStorage.getItem("modes")){
+      localStorage.setItem("modes","dark");
+    }
+  },[])
 
   return (
     <BrowserRouter>

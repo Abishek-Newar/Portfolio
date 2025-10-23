@@ -37,17 +37,17 @@ export default function AboutDivs(){
         company: "Cool Plugins",
         year: "Mar 2025 - Oct 2025"
     }]
-    return <div className={` font-chill flex flex-col pt-64 pb-10   items-center justify-center ${theme == "dark"? "bg-bgds":"bg-white"} gap-10`}>
+    return <div className={` font-chill flex flex-col pt-64 pb-10   items-center justify-center ${theme != "light"? "bg-bgds":"bg-white"} gap-10`}>
             <div className={`flex flex-wrap gap-8  items-center justify-center  text-texts ` }>
                 {cards.map((card)=>(
-                    <div className={` w-[350px] h-[400px] border-2 rounded-lg p-10 ${theme == "dark"? "border-brdr": "border-red-300"} transition-all ease-in-out duration-500 hover:translate-y-[-7px]`}>
+                    <div className={` w-[350px] h-[400px] border-2 rounded-lg p-10 ${theme != "light"? "border-brdr": "border-red-300"} transition-all ease-in-out duration-500 hover:translate-y-[-7px]`}>
                         <h1 className="text-2xl font-semibold mb-6">{card.title}</h1>
                          <p>{card.description}</p>
                     </div>
                 ))}
             </div>
-            <div className={`border-2 w-[74%] rounded-lg ${theme == "dark"? "border-brdr": "border-red-300" } p-8`}  >
-                <h1 className={` text-3xl mb-8  ${theme == "dark"? "text-white":"text-bgds"} font-bold`}>Experience</h1>
+            <div className={`border-2 w-[74%] rounded-lg ${theme != "light"? "border-brdr": "border-red-300" } p-8`}  >
+                <h1 className={` text-3xl mb-8  ${theme != "light"? "text-white":"text-bgds"} font-bold`}>Experience</h1>
                 {experience.map((edu)=>(
                     <div className="text-spcl mb-5">
                         <div className="flex justify-between">
@@ -58,8 +58,8 @@ export default function AboutDivs(){
                     </div>
                 ))}
             </div>
-            <div className={`border-2 w-[74%] rounded-lg ${theme == "dark"? "border-brdr": "border-red-300" } p-8`}  >
-                <h1 className={` text-3xl mb-8  ${theme == "dark"? "text-white":"text-bgds"} font-bold`}>Education</h1>
+            <div className={`border-2 w-[74%] rounded-lg ${theme != "light"? "border-brdr": "border-red-300" } p-8`}  >
+                <h1 className={` text-3xl mb-8  ${theme != "light"? "text-white":"text-bgds"} font-bold`}>Education</h1>
                 {education.map((edu)=>(
                     <div className="text-spcl mb-5">
                         <div className="flex justify-between">

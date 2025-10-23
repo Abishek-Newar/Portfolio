@@ -28,7 +28,7 @@ export default function Project(){
     
 
     const theme = localStorage.getItem("modes")
-    return <div className={`${theme == "dark"? "bg-bgds text-white": "bg-white text-bgds"} font-chill py-32`}>
+    return <div className={`${theme != "light"? "bg-bgds text-white": "bg-white text-bgds"} font-chill py-32`}>
         <h1 className="text-center text-4xl font-semibold font-chill mb-24 ">Projects</h1>
         <div className=" flex flex-wrap justify-center gap-8 ">
             {
@@ -38,7 +38,7 @@ export default function Project(){
             }
         </div>
         <div className="flex justify-center mt-10">
-            <Link to="/projects"><button className={` px-5 py-3 font-chill font-semibold rounded-md uppercase transition-all ease-in-out duration-500 ${theme == "dark"? "bg-white text-bgds hover:bg-forHover hover:text-white":"bg-bgds text-white hover:bg-red-300 hover"}`} >More Projects</button></Link>
+            <Link to="/projects"><button className={` px-5 py-3 font-chill font-semibold rounded-md uppercase transition-all ease-in-out duration-500 ${theme != "light"? "bg-white text-bgds hover:bg-forHover hover:text-white":"bg-bgds text-white hover:bg-red-300 hover"}`} >More Projects</button></Link>
         </div>
     </div>
 }

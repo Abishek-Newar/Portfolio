@@ -10,7 +10,7 @@ interface Dataprops{
 const ProjectCom = ({title,description,tech,github,link}:Dataprops) => {
     const theme = localStorage.getItem("modes");
   return (
-    <div className={`border-2 w-[450px] rounded-lg p-10 flex flex-col gap-10 ${theme == "dark"? "border-brdr": "border-red-300"} `}>
+    <div className={`border-2 w-[450px] rounded-lg p-10 flex flex-col gap-10 ${theme != "light"? "border-brdr": "border-red-300"} `}>
                 <div className="flex justify-between items-center">
                     <FaRegFolder className="w-8 h-8" />
                     <div className="flex gap-3">
