@@ -1,6 +1,6 @@
 
 
-
+import Contributions from "./Contributions";
 export default function AboutDivs(){
     const theme = localStorage.getItem("modes")
     const cards = [{
@@ -46,6 +46,7 @@ export default function AboutDivs(){
                     </div>
                 ))}
             </div>
+            <Contributions theme={theme as string} />
             <div className={`border-2 w-[74%] rounded-lg ${theme != "light"? "border-brdr": "border-red-300" } p-8`}  >
                 <h1 className={` text-3xl mb-8  ${theme != "light"? "text-white":"text-bgds"} font-bold`}>Experience</h1>
                 {experience.map((edu)=>(
